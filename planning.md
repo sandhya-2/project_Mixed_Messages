@@ -8,7 +8,7 @@
 
 ## STEPS:
 1. Chosse a theme (inspirational messages).
-2. Create a script that will make the program work as expected
+2. Create a script file and check if Node is working properly
 3. Set-up version control
 4. Store message components to be used on the program
 5. Add functionality to randomly select the messages components to create a random message
