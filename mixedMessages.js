@@ -11,3 +11,15 @@ const messageComponents = {
     _conclusionOfTriumph: ['make a lemonade!', 'keep fighting until you overcome your dificulties!', 'look at what you have conquered so far and remember who you are!', 'remeber your strength and go trhough it!'],
     _conclusionOfLove: ['show all the love you have!', 'feel the love inside your heart...', 'fulfill your thoughts wiht love and passion!'],
 };
+
+//Creating a function that will gather all the needed components to form a final message.
+const getRandomMessage = () => {
+    const finalMessage = [];
+    let chooseIfOrWhen = Math.floor(Math.random() * 2);
+    if (chooseIfOrWhen == 0) {
+        finalMessage.push(_beginsWithIf[Math.floor(Math.random() * _beginsWithIf.length)]);
+    } else if (chooseIfOrWhen == 1) {
+        finalMessage.push(_beginsWithWhen[Math.floor(Math.random() * _beginsWithWhen)]);
+    }
+    console.log(finalMessage);
+}
