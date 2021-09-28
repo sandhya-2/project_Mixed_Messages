@@ -7,7 +7,7 @@
 - Each and every time the an user runs the program, it generates a new random message.
 
 ## STEPS:
-1. Chosse a theme (coding jokes).
+1. Chosse a theme (inspirational messages).
 2. Create a script that will make the program work as expected
 3. Set-up version control
 4. Store message components to be used on the program
