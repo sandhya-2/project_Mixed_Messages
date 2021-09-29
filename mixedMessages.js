@@ -13,7 +13,7 @@ const getRandomMessage = () => {
     finalMessage.push(messageComponents._middle[middler]);
     let finale = Math.floor(Math.random() * messageComponents._end.length);
     finalMessage.push(messageComponents._end[finale]);
-    return finalMessage;
+    return finalMessage.join();
 };
 
 //console.log(getRandomMessage());
