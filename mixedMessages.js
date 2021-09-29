@@ -15,11 +15,21 @@ const messageComponents = {
 //Creating a function that will gather all the needed components to form a final message.
 const getRandomMessage = () => {
     const finalMessage = [];
-    let chooseIfOrWhen = Math.floor(Math.random() * 2);
-    if (chooseIfOrWhen == 0) {
-        finalMessage.push(_beginsWithIf[Math.floor(Math.random() * _beginsWithIf.length)]);
-    } else if (chooseIfOrWhen == 1) {
-        finalMessage.push(_beginsWithWhen[Math.floor(Math.random() * _beginsWithWhen)]);
-    }
-    console.log(finalMessage);
-}
+    const chooseBegin = Math.floor(Math.random() * 2);
+    let starter = [];
+    let middle = [];
+    let end = [];
+    let randomizerBeginning = 0;
+    let randomizerMiddle = 0;
+    let randomizerEnding = 0;
+    if (chooseBegin === 0) {
+        starter = messageComponents._beginsWithIf;
+    }   else if (chooseBegin === 1) {
+        starter = messageComponents._beginsWithWhen;
+    };
+    randomizerBeginning = Math.floor(Math.random() * starter.length);
+    finalMessage.push(starter[randomizerBeginning]);
+    return finalMessage;
+};
+
+console.log(getRandomMessage());
